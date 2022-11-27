@@ -1,4 +1,4 @@
-# Student Affairs Website Project
+# Student Affairs Website Projec
 
 ## Website Description
 
