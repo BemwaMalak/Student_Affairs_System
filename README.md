@@ -132,7 +132,7 @@ The project consists of 8 web pages in total.
 
 <img src="https://user-images.githubusercontent.com/70202370/204141564-5dd81f3e-1a84-4a22-8e5f-cc02e8ff6ff1.png"/>
 
-- All team members are shown on this page along with the supervisors' professors.
+- All team members are shown on this page along with the supervisors professors.
 
 </br>
 </br>
