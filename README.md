@@ -30,6 +30,7 @@ The project consists of 8 web pages in total.
 - A screenshot from the page:
 
 <img src="https://user-images.githubusercontent.com/70202370/204141571-797c6e29-5cdf-4434-a842-f8d49f08164d.png"/>
+
 - This is the main interface for the student affairs system project.
 
 
