@@ -18,7 +18,7 @@ The project consists of 8 web pages in total.
 <img src="https://user-images.githubusercontent.com/70202370/204141577-18f1e875-64ba-46e9-9f4b-3e679f6a677b.png"/>
 
 - This is the main interface for all the course projects we choose from the student affairs system project to design and implement.
-- You can press on the student affairs system sentence to continue to the actual project.
+- You can press on the student affairs system sentence to continue to the project.
 
 
 </br>
