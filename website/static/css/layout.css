@@ -1,0 +1,317 @@
+body {
+  margin: 0%;
+  background-image: linear-gradient(
+        240deg,
+        hsl(184deg 72% 57%) 0%,
+        hsl(187deg 79% 52%) 12%,
+        hsl(189deg 100% 46%) 23%,
+        hsl(192deg 100% 46%) 34%,
+        hsl(195deg 100% 46%) 44%,
+        hsl(200deg 85% 52%) 54%,
+        hsl(201deg 75% 60%) 63%,
+        hsl(199deg 65% 66%) 73%,
+        hsl(198deg 52% 71%) 82%,
+        hsl(195deg 37% 76%) 91%,
+        hsl(192deg 16% 82%) 100%
+      );
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      
+}
+  footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: white ;
+  text-align: center;
+  min-height: 100%;
+  position: relative;
+  clear: both ;
+  z-index: 1;
+  margin-top: 80px;
+}
+
+#content {
+  flex: 1;
+}
+#header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+#footer {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+  height: 100px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+li {
+  float: right;
+  margin-right: 40px;
+  margin-top: 5px ;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #363538;
+}
+#facultyName {
+    margin: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+li a, .dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  border:1px solid black;
+  transition: .5s;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #8a878a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  border:1px solid black;
+  transition: .5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;  
+  left: calc( 100% - 432.761px);
+}
+
+#facultyLogo{
+  margin: 0;
+  height: 100px;
+  width: 100px;
+  margin-left: 20px;
+}
+
+#universityLogo{
+  margin: 0;
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+#footerNav{
+  float: right;
+
+  margin-top: 20px;
+  margin-right: 60px;
+}
+
+#footerNav td{
+  padding: 2px;
+}
+#footerNav td a{
+  text-align: center;
+  cursor: pointer;
+}
+#copyright{
+    display: block ;
+    background-color: #ffffff;
+    padding-bottom: 10px ;
+}
+
+a{
+  text-decoration: none;
+}
+
+:root {
+  /** sunny side **/
+  --blue-background: #C2E9F6;
+  --blue-border: #72cce3;
+  --blue-color: #96dcee;
+  --yellow-background: #fffaa8;
+  --yellow-border: #f5eb71;
+  /** dark side **/
+  --indigo-background: #808fc7;
+  --indigo-border: #5d6baa;
+  --indigo-color: #6b7abb;
+  --gray-border: #e8e8ea;
+  --gray-dots: #e8e8ea;
+  /** general **/
+  --white: #fff;
+}
+
+.toggle--checkbox {
+display: none;
+}
+
+/* .toggle--checkbox:checked {
+ 
+*/
+.toggle--checkbox:checked ~ .background {
+  background: var(--indigo-background);
+}
+.toggle--checkbox:checked + .toggle--label {
+  background: var(--indigo-color);
+  border-color: var(--indigo-border);
+  /** Change the cloud to stars **/
+  /** Change the sun into the moon **/
+  /** Show the dimples on the moon **/
+}
+
+.toggle--checkbox:checked + .toggle--label .toggle--label-background {
+  left: 60px;
+  width: 5px;
+}
+.toggle--checkbox:checked + .toggle--label .toggle--label-background:before {
+  width: 5px;
+  height: 5px;
+  top: -25px;
+}
+.toggle--checkbox:checked + .toggle--label .toggle--label-background:after {
+  width: 5px;
+  height: 5px;
+  left: -30px;
+  top: 20px;
+}
+.toggle--checkbox:checked + .toggle--label:before {
+  background: var(--white);
+  border-color: var(--gray-border);
+  animation-name: switch;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+}
+.toggle--checkbox:checked + .toggle--label:after {
+  transition-delay: 350ms;
+  opacity: 1;
+}
+.toggle--label {
+/** Placeholder element, starting at blue **/
+  width: 60px;
+  height: 25px;
+  background: var(--blue-color);
+  border-radius: 100px;
+  border: 5px solid var(--blue-border);
+  display: flex;
+  position: relative;
+  transition: all 350ms ease-in;
+/** The sun cloud and moon stars **/
+/** Sun/Moon element **/
+/** Gray dots on the moon **/
+}
+.toggle--label-background {
+  width: 10px;
+  height: 3px;
+  border-radius: 5px;
+  position: relative;
+  left: 50px;
+  top: 15px;
+  transition: all 150ms ease-in;
+}
+.toggle--label-background:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 20px;
+  height: 3px;
+  border-radius: 5px;
+
+  left: -20px;
+  transition: all 150ms ease-in;
+}
+.toggle--label-background:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  height: 3px;
+  border-radius: 5px;
+  left: -10px;
+  transition: all 150ms ease-in;
+}
+.toggle--label:before {
+  animation-name: reverse;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+  transition: all 350ms ease-in;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 5px solid var(--yellow-border);
+  top: 1px;
+  left: 1px;
+  position: absolute;
+  border-radius: 82px;
+  background: var(--yellow-background);
+}
+.toggle--label:after {
+  transition-delay: 0ms;
+  transition: all 250ms ease-in;
+  position: absolute;
+  content: "";
+  
+  left: 20px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+@keyframes switch {
+  0% {
+      left: 4px;
+  }
+  60% {
+      left: 4px;
+      width: 45px;
+  }
+  100% {
+      left: 30px;
+  }
+}
+@keyframes reverse {
+  0% {
+      left: 30px;
+  }
+  60% {
+      left: 4px;
+      width: 45px;
+  }
+  100% {
+      left: 4px;
+  }
+}
+#dark_mode{
+  padding: 7px;
+}

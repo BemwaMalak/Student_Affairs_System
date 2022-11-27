@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student Page</title>
+    <link rel="stylesheet" href="{% static 'css/add.css' %}">
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <script src="{% static 'js/add.js' %}"></script>
+    <script defer src="{% static 'js/header.js' %}"></script>
+    <script defer src="{% static 'js/footer.js' %}"></script>
+</head>
+<body>
+<header id="app-header"></header>
+<div id="content">
+  <div class="title">Add Student</div>
+  <section class="after-title">
+    <div class="container">
+        <form action="add" method="post" onsubmit="return check()" >
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Name:</span>
+                    <input type="text" name="name" id="name"  placeholder="Student Name" required >
+                </div>
+                
+                <div class="input-box">
+                    <span class="details">ID:</span>
+                    <input type="number" name="studId" id="ID" min="1" placeholder="Student ID" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">GPA:</span>
+                  <input type="number" step="0.01" name="gpa" id="GPA"  min="0" max="4" placeholder="Student GPA" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email:</span>
+                <input type="email" name="email" id="Email" placeholder="Student Email" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Date Of Birth:</span>
+              <input type="date" name="dateOfBirth" id="DateOfBirth" required>
+          </div>
+          <div class="radio">
+            <span class="details">Gender:</span>
+            <input id="1" type="radio" name="gender" value="M" checked="true">
+                <label for="1" >Male</label>
+            <input id="2" type="radio" name="gender" value="F">
+            <label  for="2">Female</label>
+        </div>
+
+        <div class="radio">
+          <span class="details">Status:</span>
+          <input id="3" type="radio" name="status" value="True" checked="true">
+          <label for="3" >Active</label>
+          <input id="4" type="radio" name="status" value="False">
+          <label  for="4">InActive</label>
+      </div>
+            <div class="input-box">
+              <span class="details">Level:</span>
+              
+              <select name="level" id="Level">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+          </div>
+                
+                <div class="input-box">
+                    <span class="details" id="depart">Department:</span>
+                    <!-- create a dropdown list of departments -->
+                    <select name="department" id="department">
+                        <option value="GE" selected>General (no department)</option>
+                        <option value="CS">Computer Science</option>
+                        <option value="DS">Decision Support</option>
+                        <option value="IS">Information Systems</option>
+                        <option value="AI">Artificial Intelligence</option>
+                        <option value="IT">Information Technology</option>
+                    </select>
+                </div>
+              <div class="input-box">
+                <span class="details">Mobile Number:</span>
+                <input type="text" name="mobileNumber" id="Mobile" placeholder="Student Mobile Number" required>
+            </div>
+            <!-- create submit button -->
+            <div id="btns"> 
+              {% csrf_token %}
+              <button type= "submit" class="btn btn-5 btn-5b btn-icon-only icon-arrow-right"> <span> Save</span> </button>
+              <button type="reset" class="btn btn-5 btn-5b btn-icon-only icon-arrow-right"> <span>Reset</span></button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+</div>
+
+<footer id="app-footer"></footer>
+</body>
+</html>
+
+

@@ -1,0 +1,287 @@
+#content {
+    flex: 1;
+    align-self: center ;
+    width: 80% ;
+}
+#title {
+    
+    margin-bottom: 40px ;
+    margin-top: 80px ;
+    color: #f6f6f6 ;
+    vertical-align:middle;
+    text-align: center;
+
+}
+#box {
+    
+    background-color: #fff;
+    align-self: center;
+    height: auto ;
+    border-radius: 10px;
+    padding: 20px 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* table */
+
+.content-table{
+    border-collapse: collapse;
+    margin : 25px 0;
+    font-size : 0.9em;
+    min-width : 400px;
+    border-radius: 7px;
+    border: 0.1px solid #cccccc;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0 , 0 ,0 , 0.15);
+    margin: auto;
+    margin-top: 3% ;
+    margin-bottom: 3% ;
+}
+
+.content-table thead tr{
+    background-color: #ececec;
+    color :#989898;
+    text-align: center ;
+}
+
+.content-table{
+    color: #000000;
+    text-align: center;
+}
+
+.content-table th , .content-table td{
+    padding : 12px 15px;
+
+}
+
+.content-table tbody tr{
+    border-bottom : 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+} 
+
+.content-table tbody tr:last-of-type{
+    border-bottom : 2px solid #16a9f1 ;
+}
+
+.content-table tbody tr.active-row{
+    font-weight: bold;
+    background-color : #16a9f1;
+}
+
+.content-table tbody tr:not(.nohover):hover{
+    background-color: antiquewhite;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+from {background-color: #F3E9DD;}
+to {background-color: #DAB88B;}
+
+/*
+    #DAB88B
+    #F3E9DD
+    #FDF6EC
+    #B7CADB
+*/
+}
+.hidden{
+    display: none;
+}
+
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 10px 50px;
+	display: inline-block;
+	margin: 1px 3px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-arrow-right:before {
+	content: url('../img/icons/arrow-right.png');
+}
+
+/* Button 5 */
+.btn-5 {
+	background: #16a9f1;
+	color: #fff;
+	height: 40px;
+	min-width: 70px;
+	font-size: 16px ;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+    float: right;
+    margin-bottom: 25px ;
+
+}
+
+.btn-5:active {
+	background: #16a9f1;
+	top: 2px;
+}
+
+.btn-5 span {
+    color: #ffffff;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.3s;
+	-webkit-backface-visibility: hidden;
+	-moz-transition: all 0.3s;
+	-moz-backface-visibility: hidden;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+}
+
+.btn-5:before {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	line-height: 2.5;
+	font-size: 180%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-5:active:before {
+	color: #16a9f1;
+}
+
+/* Button 5a */
+.btn-5a:hover span {
+	-webkit-transform: translateY(300%);
+	-moz-transform: translateY(300%);
+	-ms-transform: translateY(300%);
+	transform: translateY(300%);
+}
+
+.btn-5a:before {
+	left: 0;
+	top: -100%;
+}
+
+.btn-5a:hover:before {
+	top: 0;
+}
+
+/* Button 5b */
+.btn-5b:hover span {
+	-webkit-transform: translateX(200%);
+	-moz-transform: translateX(200%);
+	-ms-transform: translateX(200%);
+	transform: translateX(200%);
+}
+
+.btn-5b:before {
+	left: -100%;
+	top: 0;
+}
+
+.btn-5b:hover:before {
+	left: 0;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

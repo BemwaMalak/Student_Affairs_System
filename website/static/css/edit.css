@@ -1,0 +1,223 @@
+
+  #content {
+    flex: 1;
+  }
+  *{
+    font-family: 'Segoe UI';
+  }
+  .title {
+    font-weight: bold;
+  font-size: 2em;
+    margin-bottom: 40px ;
+    margin-top: 80px ;
+    color: #f6f6f6 ;
+    vertical-align:middle;
+    text-align: center;
+  }
+  .after-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .container {
+      width: 50%;
+      /* max-width: 700px; */
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px 100px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      /* justify-content: center; */
+  }
+  form {
+      width: 100%;
+      margin-bottom: 50px;
+  }
+  .container form .user-details {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      flex-wrap: wrap;
+      justify-content: left;
+      margin: 20px 0 12px 0;
+  }
+  .container form .user-details .input-box {
+      margin-bottom: 20px;
+      width: 100%;
+  }
+  form .input-box span.details {
+      display: inline-block;
+      font-weight: 500;
+      margin-bottom: 5px;
+      width: 15%;
+  }
+  .container form .user-details .radio {
+    margin-bottom: 20px;
+    width: 100%;
+}
+form .radio span.details {
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  width: 15%;
+} 
+
+  .user-details .input-box input,
+  .user-details .input-box select {
+      height: 45px;
+      width: 50%;
+      outline: none;
+      font-size: 14px;
+      border-radius: 5px;
+      padding-left: 15px;
+      border: 1px solid #ccc;
+      border-bottom-width: 2px;
+      transition: all 0.5s ease;
+  }
+  /* .user-details .input-box span#depart{
+      width:50%;
+  } */
+  .user-details .input-box select {
+      /* margin-left:20%; */
+      background-color: #fff;
+  }
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 10px 50px;
+	display: inline-block;
+	margin: 1px 3px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.icon-arrow-right:before {
+	content: url('../img/icons/arrow-right.png');
+}
+
+
+
+
+/* Button 5 */
+.btn-5 {
+	background: #16a9f1;
+	color: #fff;
+	height: 40px;
+	min-width: 70px;
+	font-size: 16px ;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+    float: right;
+    margin-bottom: 25px ;
+
+}
+
+.btn-5:active {
+	background: #16a9f1;
+	top: 2px;
+}
+
+.btn-5 span {
+    color: #ffffff;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.3s;
+	-webkit-backface-visibility: hidden;
+	-moz-transition: all 0.3s;
+	-moz-backface-visibility: hidden;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+}
+
+.btn-5:before {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	line-height: 2.5;
+	font-size: 180%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-5:active:before {
+	color: #16a9f1;
+}
+
+/* Button 5a */
+.btn-5a:hover span {
+	-webkit-transform: translateY(300%);
+	-moz-transform: translateY(300%);
+	-ms-transform: translateY(300%);
+	transform: translateY(300%);
+}
+
+.btn-5a:before {
+	left: 0;
+	top: -100%;
+}
+
+.btn-5a:hover:before {
+	top: 0;
+}
+
+/* Button 5b */
+.btn-5b:hover span {
+	-webkit-transform: translateX(200%);
+	-moz-transform: translateX(200%);
+	-ms-transform: translateX(200%);
+	transform: translateX(200%);
+}
+
+.btn-5b:before {
+	left: -100%;
+	top: 0;
+}
+
+.btn-5b:hover:before {
+	left: 0;
+}
+#btns{
+    position: absolute;
+    left:calc(50vw - 180px) ;
+  }

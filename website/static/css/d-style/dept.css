@@ -1,0 +1,91 @@
+  #content {
+    flex: 1;
+    align-self: center ;
+    width: 80% ;
+  }
+  *{
+    font-family: 'Segoe UI';
+}
+.title {
+    font-weight: bold;
+    font-size: 2em;
+    
+    margin-bottom: 40px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    font: optional;color: #30D1FF;
+}
+  .after-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .container {
+      width: 50%;
+      /* max-width: 700px; */
+      background-color: #363538;
+      border-radius: 10px;
+      padding: 20px 100px;
+      box-shadow: 0px 0px 40px #ffffff40 ;
+      display: flex;
+      /* justify-content: center; */
+  }
+  form {
+      width: 100%;
+  }
+  .container form .user-details {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      flex-wrap: wrap;
+      justify-content: left;
+      margin: 20px 0 12px 0;
+  }
+  .container form .user-details .input-box {
+      margin-bottom: 20px;
+      width: 100%;
+  }
+  form .input-box span.details {
+      display: inline-block;
+      font-weight: 500;
+      margin-bottom: 5px;
+      width: 15%;
+  }
+  .user-details .input-box input,
+  .user-details .input-box select {
+      height: 45px;
+      width: 50%;
+      outline: none;
+      font-size: 14px;
+      border-radius: 5px;
+      padding-left: 15px;
+      border: 1px solid #ccc;
+      border-bottom-width: 2px;
+      transition: all 0.5s ease;
+  }
+  /* .user-details .input-box span#depart{
+      width:50%;
+  } */
+  .user-details .input-box select {
+      /* margin-left:20%; */
+      background-color: #fff;
+  }
+  .user-details .input-box #apply {
+      float: right;
+      width: 100px;
+      padding: 0;
+      font-weight: bold;
+      background-color : #408697;
+      cursor: pointer;
+  }
+  .user-details .input-box input[value="Apply"] {
+      justify-content: center;
+      font: optional;color: #ffffff;
+  }
+
+.user-details .input-box .details 
+
+{
+    color: #fff ;
+}

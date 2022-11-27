@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Department Page</title>
+    <link rel="stylesheet" href="{% static 'css/dept.css' %}">
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <script src="{% static 'js/dept.js' %}"></script>
+    <script defer src="{% static 'js/header.js' %}"></script>
+    <script defer src="{% static 'js/footer.js' %}"></script>
+</head>
+<body>
+<header id="app-header"></header>
+<div id="content">
+  <div class="title">Select Department</div>
+  <section class="after-title">
+    <div class="container">
+        <form action = ""  method = "post"  onsubmit="return showSuccess()" >
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Name:</span>
+                    <input type="text" name="name" id="name" value = "{{name}}" disabled>
+                </div>
+                <div class="input-box">
+                    <span class="details">ID:</span>
+                    <input type="text" name="studId" id="ID" value = "{{id}}" disabled>
+                </div>
+                
+                {% csrf_token %}
+
+                <div class="input-box">
+                    <span class="details" id="depart">Department:</span>
+                    <!-- create a dropdown list of departments -->
+                    <select name="department" id="department">
+                        <option value="CS">Computer Science</option>
+                        <option value="DS">Decision Support</option>
+                        <option value="IS">Information Systems</option>
+                        <option value="AI">Artificial Intelligence</option>
+                        <option value="IT">Information Technology</option>
+                    </select>
+                </div>
+                <!-- create submit button -->
+                <div class="input-box">
+                    <input id="apply" type="submit" name="submit" value="Apply">
+                </div>
+        </form>
+    </div>
+</section>
+  
+  
+</div>
+
+<footer id="app-footer"></footer>
+</body>
+</html>
+
+

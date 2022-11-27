@@ -1,0 +1,257 @@
+
+    body {
+        margin: 0%;
+        background-image: linear-gradient(
+              240deg,
+              hsl(184deg 72% 57%) 0%,
+              hsl(187deg 79% 52%) 12%,
+              hsl(189deg 100% 46%) 23%,
+              hsl(192deg 100% 46%) 34%,
+              hsl(195deg 100% 46%) 44%,
+              hsl(200deg 85% 52%) 54%,
+              hsl(201deg 75% 60%) 63%,
+              hsl(199deg 65% 66%) 73%,
+              hsl(198deg 52% 71%) 82%,
+              hsl(195deg 37% 76%) 91%,
+              hsl(192deg 16% 82%) 100%
+            );
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            
+      }
+        footer {
+        position: fixed;
+        left: 0;
+        bottom: 100;
+        width: 100%;
+        color: white;
+        text-align: center;
+        min-height: 100%;
+        position: relative;
+        clear: both ;
+        z-index: 1;
+        height: -3em ;
+      }
+      
+      #background {
+        scroll-behavior: smooth ;
+        background-image: linear-gradient(
+              240deg,
+              hsl(184deg 72% 57%) 0%,
+              hsl(187deg 79% 52%) 12%,
+              hsl(189deg 100% 46%) 23%,
+              hsl(192deg 100% 46%) 34%,
+              hsl(195deg 100% 46%) 44%,
+              hsl(200deg 85% 52%) 54%,
+              hsl(201deg 75% 60%) 63%,
+              hsl(199deg 65% 66%) 73%,
+              hsl(198deg 52% 71%) 82%,
+              hsl(195deg 37% 76%) 91%,
+              hsl(192deg 16% 82%) 100%
+            );
+            width: 100%;
+            height: 100%;
+            position: relative;
+      
+      }
+      #content {
+        flex: 1;
+      }
+      #header {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        overflow: hidden;
+        background-color: #ffffff;
+      }
+      
+      #footer {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 120px;
+        overflow: hidden;
+        background-color: #ffffff;
+      }
+      
+      li {
+        float: right;
+        margin-right: 40px;
+        margin-top: 5px ;
+      }
+      
+      * {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: #363538;
+      }
+      #facultyName {
+          margin: 15px;
+          font-size: 18px;
+          font-weight: 500;
+      }
+      li a, .dropbtn {
+        display: inline-block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+      li a:hover, .dropdown:hover .dropbtn {
+        border:1px solid black;
+        transition: .5s;
+      }
+      
+      li.dropdown {
+        display: inline-block;
+      }
+      
+      .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #8a878a;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+      }
+      
+      .dropdown-content a:hover {
+        border:1px solid black;
+        transition: .5s;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;  
+        right: 5%;
+      }
+      
+      #facultyLogo{
+        height: 120px;
+        width: 120px;
+        margin-left: 20px;
+      }
+      
+      #universityLogo{
+        height: 120px;
+        width: 120px;
+        margin-right: 20px;
+      }
+      
+      #footerNav{
+        float: right;
+        padding: 10px;
+        margin-top: 20px;
+        margin-right: 60px;
+      }
+      
+      #footerNav td{
+        padding: 2px;
+      }
+      #footerNav td a{
+        text-align: center;
+        cursor: pointer;
+      }
+      #copyright{
+          display: block ;
+          background-color: #ffffff;
+          padding-bottom: 10px ;
+      }
+
+  .slidershow{
+      width: 1500px;
+      height: 700px;
+      overflow: hidden;
+  }
+  .middle{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+
+  }
+  .navig{
+      position: absolute;
+      bottom: 20%;
+      left:50%;
+      transform: translateX(-50%);
+      display: flex;
+  }
+  .bar{
+      width: 150px;
+      height: 10px;
+      border: 2px solid #ffffff;
+      margin: 25px;
+      cursor: pointer;
+      transition: 0.4s;
+  }
+  .bar:hover{
+      background: #fff;
+  }
+  .bar.active{
+      background: #fff;
+  }
+  .slides{
+      width: 500%;
+      height: 100%;
+      display: flex;
+      
+  }
+  .slide{
+      width: 20%;
+      transition: 0.6;
+  }
+  .slide p{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 200px;
+    right: -300px;
+    color: #F6F6F6;
+    text-shadow: #363538 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    filter: drop-shadow(4px 4px 4px #000000);
+    font-size: xx-large;
+    font-weight: 600;
+    font-size: 400%;
+    cursor: pointer;
+  }
+  
+  #r1:checked ~.s1{
+      margin-left: 0;
+  }
+  #r2:checked~.s1{
+    margin-left: -20%;
+  }
+  #r3:checked~.s1{
+    margin-left: -40%;
+  }
+  #r4:checked~.s1{
+    margin-left: -60%;
+  }
+ input[name="r"]{
+     position:absloute;
+     visibility: hidden;
+
+ }
+ 
+ .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  }

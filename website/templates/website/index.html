@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+<header>
+<ul id="header">
+    <li style="float: left;" id="facultyName"><label>Faculty of computers and artificial intelligence</label></li>
+    
+</ul>
+</header>
+<div id="background">
+    
+</div>
+<div id="content">
+    <div class="slidershow middle">
+        <div class="slides" >
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+            <div class="slide s1" >
+                <p onclick="location.href='home';">Student Affairs System</p>
+            </div>
+            <div class="slide" class="s2">
+                <p>Human Resources System</p>
+            </div>
+            <div class="slide" class="s3">
+                <p>Higher studies System</p>
+            </div>
+            <div class="slide" class="s4">
+                <p> Laboratory tracking System</p>
+            </div>
+        </div>
+        <div class="navig">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+        </div>
+    </div>
+  
+  
+</div>
+
+<footer>
+  <ul id="footer">
+    <li style="float: left;"><img src="{% static 'img\logos\facultyLogo.webp' %}"  id="facultyLogo"></li>
+    <li style="float: left;"><img src="{% static 'img\logos\universityLogo.webp' %}" id="universityLogo"></li>
+      
+    </ul>
+    <div id="copyright"><label>All rights reserved &copy; cairo university 2021-2022</label></div>
+</footer>
+</body>
+<script src="{% static 'js/main.js' %}"></script>
+</html>
+
+

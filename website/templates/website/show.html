@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show all Students Page</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/show.css' %}">
+    <script src="{% static 'js/show.js'%}"></script>
+    <script defer src="{% static 'js/header.js' %}"></script>
+    <script defer src="{% static 'js/footer.js' %}"></script>
+</head>
+<body>
+<header id="app-header"></header>
+
+<div id="content">
+    <!-- work -->
+    <h1 id="title"> Show all Students </h1>
+    <div id="box">
+        <div id="control-panel">
+            <h4>Filter students by: </h4>
+            <input type="checkbox" id="ID" name="ID" checked>
+            <label>ID</label>
+            <input type="checkbox" id="Name" name="Name" checked>
+            <label>Name</label>
+            <input type="checkbox" id="GPA" name="GPA" checked>
+            <label>GPA</label>
+            <input type="checkbox" id="Level" name="Level" checked>
+            <label>Level</label>
+            <input type="checkbox" id="Department" name="Department" checked>
+            <label>Department</label>
+            <input type="checkbox" id="Date Of Birth" name="Date Of Birth" checked>
+            <label>Data of Birth</label>
+            <input type="checkbox" id="Gender" name="Gender" checked>
+            <label>Gender</label>
+            <input type="checkbox" id="Status" name="Status" checked>
+            <label >Status</label>
+            <input type="checkbox" id="Email" name="Email" checked>
+            <label>Email</label>
+            <input type="checkbox" id="Mobile Number" name="Mobile Number" checked> 
+            <label>Mobile Number</label>
+            <br> <br>
+            <button class="btn btn-5 btn-5b btn-icon-only icon-arrow-right" onclick="checkAll()"> <span> Check/Uncheck All </span> </button>
+            <button class="btn btn-5 btn-5b btn-icon-only icon-arrow-right" onclick="applyFilters()"> <span>Apply</span></button>
+
+        </div>
+
+        <table class = "content-table">
+            <thead>
+                <th class="ID">ID</th>
+                <th class="Name">Name</th>
+                <th class="GPA">GPA</th>
+                <th class="Level">Level</th>
+                <th class="Department">Department</th>
+                <th class="Date Of Birth">Date Of Birth</th>
+                <th class="Gender">Gender</th>
+                <th class="Status">Active Status</th>
+                <th class="Email">Email</th>
+                <th class="Mobile Number">Mobile Number</th> 
+            </thead>
+            <tbody id="table-body">
+              
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<footer id="app-footer"></footer>
+</body>
+<script src="{% static 'js/getAll.js' %}"></script>
+</html>

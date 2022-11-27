@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for a Student Page</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/search.css' %}">
+    <script defer src="{% static 'js/header.js' %}"></script>
+    <script defer src="{% static 'js/footer.js' %}"></script>
+    
+</head>
+<body>
+<header id="app-header"></header>
+<div id="content">
+    <!-- work -->
+    <h1 id="title"> Search for a Student </h1>
+    <div id="box">
+        <div id="control-panel">
+          <div id="search">
+            <label for="searchbar" id="searchtitle">Search : </label>
+            <input type="text" id="searchbar" placeholder="Search by name" onkeyup="searchfilter()">
+           <!--<label for="searchbar"><button id="searchbutton" ></button></label>-->
+            
+          </div>
+
+            <br> <br>
+            <br><br>
+
+        </div>
+
+        <table class = "content-table">
+            <thead>
+                <th class="ID">ID</th>
+                <th class="Name">Name</th>
+                <th class="GPA">GPA</th>
+                <th class="Level">Level</th>
+                <th class="Department">Department</th>
+                <th class="Date Of Birth">Date Of Birth</th>
+                <th class="Gender">Gender</th>
+                <th class="Status">Status</th>
+                <th class="Email">Email</th>
+                <th class="Mobile Number">Mobile Number</th> 
+            </thead>
+            <tbody id="data">
+              
+            </tbody>
+        </table>
+        
+       <div id="btns"> 
+        <button class="btn btn-5 btn-5b btn-icon-only icon-arrow-right" onclick="selectDepartment()"> <span> Select Department </span> </button>
+        <button class="btn btn-5 btn-5b btn-icon-only icon-arrow-right" onclick="editOrDelete()" > <span>Edit/Delete</span></button>
+       </div>
+        
+        <br><br>
+    </div>
+</div>
+<footer id="app-footer"></footer>
+</body>
+<script src="{% static 'js/searchmeth.js' %}"></script>
+<script src="{% static 'js/search.js' %}"></script>
+
+</html>

@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <script defer src="{% static 'js/header.js' %}"></script>
+    <script defer src="{% static 'js/footer.js' %}"></script>
+</head>
+<body>
+<header id="app-header"></header>
+<div id="content">
+    <!-- work -->
+    <h1 id = "title" > About Us </h1>
+    <div id = "box" >
+
+      <div id = "team-section">
+
+        <h2> TEAM MEMBERS </h2> 
+        <div id = "team-cards" >
+
+              <!-- CONTACT CARD -->
+
+              <!-- bemwa card -->
+              <div class="card" onclick="this.classList.toggle('expanded')">
+                <img class="label" src="{% static 'img/pictures/bemwa.webp' %}" viewBox="0 0 100 100" height="300" width="auto"> 
+                <h1 class="title2"> BEMWA </h1>
+                <div class="text2">
+                  <div class="text-content">
+                    <h1 class="title"> BEMWA MALAK </h1>
+                    <div class="body-text">  20200116  <a href =  "https://www.linkedin.com/in/bemwamalak/" target="_blank"> linkedIn </a> </div>
+                  </div>
+                </div>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+              </div>
+
+              <!-- David card -->
+              <div class="card" onclick="this.classList.toggle('expanded')">
+                <img class="label" src="{% static 'img/pictures/david.webp' %}" viewBox="0 0 100 100" height="300" width="auto"> 
+                <h1 class="title2"> DAVID </h1>
+                <div class="text2">
+                  <div class="text-content">
+                    <h1 class="title"> DAVID GEORGE </h1>
+                    <div class="body-text">  20201059  <a href =  "https://www.linkedin.com/in/david-george-77498b219/" target="_blank"> linkedIn </a> </div>
+                  </div>
+                </div>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+              </div>
+              
+
+
+              <!-- kerolos card -->
+              <div class="card" onclick="this.classList.toggle('expanded')">
+                <img class="label" src="{% static 'img/pictures/kerolos.webp' %}" viewBox="0 0 100 100" height="300" width="auto"> 
+                <h1 class="title2"> KEROLOS </h1>
+                <div class="text2">
+                  <div class="text-content">
+                    <h1 class="title" > KEROLOS GEORGE </h1>
+                    <div class="body-text" >  20200399  <a href = "https://www.linkedin.com/in/kerolos-george-a911a6235/" target="_blank"> linkedIn </a> </div>
+                  </div>
+                </div>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+              </div>
+
+              
+              <!-- Kevin card -->
+              <div class="card" onclick="this.classList.toggle('expanded')">
+                <img class="label" src=" {% static 'img/pictures/kevin.webp' %}" viewBox="0 0 100 100" height="300" width="auto"> 
+                <h1 class="title2"> KEVIN </h1>
+                <div class="text2">
+                  <div class="text-content">
+                    <h1 class="title"> KEVIN MARCO </h1>
+                    <div class="body-text">  20200401  <a href =  "https://www.linkedin.com/in/kevin-marco-170000232/" target="_blank"> linkedIn </a> </div>
+                  </div>
+                </div>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+              </div>
+
+
+              
+
+              <!-- Maher card -->
+              <div class="card" onclick="this.classList.toggle('expanded')">
+                <img class="label" src="{% static 'img/pictures/maher.webp' %}" viewBox="0 0 100 100" height="300" width="auto"> 
+                <h1 class="title2"> MAHER </h1>
+                <div class="text2">
+                  <div class="text-content">
+                    <h1 class="title"> MAHER MOHSEN </h1>
+                    <div class="body-text">  20200415  <a href =  "https://www.linkedin.com/in/maher-mohsen-6a5a54102/" target="_blank"> linkedIn </a> </div>
+                  </div>
+                </div>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+              </div>
+
+              <!-- Mario card  -->
+              <div class="card" onclick="this.classList.toggle('expanded')">
+                <img class="label" src="{% static 'img/pictures/mario.webp' %}" viewBox="0 0 100 100" height="300" width="auto"> 
+                <h1 class="title2"> MARIO </h1>
+                <div class="text2">
+                  <div class="text-content">
+                    <h1 class="title"> MARIO GUIRGUIS </h1>
+                    <div class="body-text">  20200405  <a href =  "https://www.linkedin.com/in/mario-guirguis-2734b4190/" target="_blank"> linkedIn </a> </div>
+                  </div>
+                </div>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+              </div>
+
+        </div>
+
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div id="supervesion-section">
+        <h2> SUPERVESION </h2> 
+        <div id = "sup-cards" >
+  
+              <!-- CONTACT CARD -->
+
+
+
+              <!-- DR. Neamat ElTazi -->
+              <div class="card" onclick="this.classList.toggle('expanded')">
+                <img class="label" src="{% static 'img/pictures/drNeamt.webp' %}" viewBox="0 0 100 100" height="300" width="auto"> 
+                <h1 class="title2"> Dr. Neamat</h1>
+                <div class="text2">
+                  <div class="text-content">
+                    <h1 class="title"> Dr. Neamat El-Tazi  </h1>
+                    <div class="body-text">  
+                        <a href =  "mailto:neamat@abuerdan.com" target="_blank" style="color: black;"> neamat@abuerdan.com </a>
+                        <a href =  "https://www.linkedin.com/in/neamateltazi/" target="_blank"> linkedIn </a> 
+                    </div>
+                  </div>
+                </div>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+              </div>
+              
+              <!-- DR. Mohmed Noor El-din  -->
+
+              <div class="card" onclick="this.classList.toggle('expanded')">
+                <img class="label" src="{% static 'img/pictures/drMohmed.webp' %}" viewBox="0 0 100 100" height="300" width="auto"> 
+                <h1 class="title2"> Dr. Mohamed </h1>
+                <div class="text2">
+                  <div class="text-content">
+                    <h1 class="title" style="font-size: larger;"> Dr.Mohmed Noor El-din </h1>
+                    <div class="body-text">  
+                        <a href =  "mailto:m.nour@fci-cu.edu.eg" target="_blank" style="color:black;"> m.nour@fci-cu.edu.eg </a>
+                        <a href =  "https://www.linkedin.com/"  target="_blank"> linkedIn </a> 
+                    </div>
+                  </div>
+                </div>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+              </div>
+
+
+          </div>
+        </div>
+
+
+
+    </div>
+    
+</div>
+
+<footer id="app-footer"></footer>
+</body>
+</html>
